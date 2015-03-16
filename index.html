@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P3 Network</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/all.css"  type="text/css" />
+
+        <!-- JS -->
+        <script src="scripts/jquery.1.7.1.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="scripts/plugins.js" type="text/javascript"></script>    
+        <script src="scripts/scripts.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="flexslider">
+            <div style="width:650px;margin:0 auto;position:relative;">
+                <img src="images/logo.png" alt="" style="position:absolute;top:35px;left:-5px;z-index:10;">
+                <div style="position:absolute;right:0px;top:80px;z-index:10;">
+                    <a href="http://drive.google.com" class="blockLink" target="_blank">MEMBER RESOURCES</a>
+                </div>
+            </div>
+            <ul class="slides">
+                <li>
+                    <img src="images/01.jpg" alt=""/>
+                    <div class="slideContent">
+                        <div class="readMoreDesc">Ten ESD students provide after-school literacy tutoring to over 80 students at Foster Elementary. 
+                            ESD students consistently provide 100-150 hours per year of literacy services to K-4 elementary students. 
+                            ESD students are working towards leveling all (3000) books in the library at Foster Elementary. 
+                            This allows students to more easily identify a book at their reading level. 
+                        </div>
+                        <div class="slideTitle">In Classroom Libraries at Stephen C. Foster Elementary</div>
+                        <a href="#" class="blockLink readMore">READ MORE</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/02.jpg" alt=""/>
+                    <div class="slideContent">
+                        <div class="readMoreDesc">This is where the full description goes.</div>
+                        <div class="slideTitle">Focused Literacy Tutoring at Burnett Elementary with Dallas Jesuit</div>
+                        <a href="#" class="blockLink readMore">READ MORE</a>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/03.jpg" alt=""/>
+                    <div class="slideContent">
+                        <div class="readMoreDesc">This is where the full description goes.</div>
+                        <div class="slideTitle">Put Another Project Title Here for Another School</div>
+                        <a href="#" class="blockLink readMore">READ MORE</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="width:100%;background:rgba(0,136,163,1);box-shadow:inset 0px -2px 5px rgba(0,0,0,0.2);">
+        <div class="columnFull">
+            <div class="headingBig" style="color:white;">WHAT IS P3?</div>
+            <div class="information" style="color:white;">
+                The Public Private Partnership Network also known as P3 Network is facilitated by volunteers of Commit! and is comprised of representatives from 12 different Dallas area private schools and all 17 elementary schools (serving approximately 10,750 students) within the Thomas Jefferson and WT White Feeder Patterns of DISD.
+                Each participant is also a part of an individual partnership representing at least one public and one private institution.  
+                <br><br>
+            </div>
+        </div>
+        </div>
+        <div class="columnFull">
+            <div style="width:650px;margin:10px auto;text-align:center;"><img src="images/commitLogo.png" alt=""></div>
+            <div class="headingSmall">P3 OBJECTIVE</div>
+            <div class="information">
+                To create collaborative partnerships that target <b>advancing one of the eleven key indicators, 3rd Grade Reading Scores</b>, as identified by the Commit! Advisory Council. Each partnership is working on individual programming to fit the needs of individual elementary schools. 
+                <br><br>
+            </div>
+            <div id="scorecard" style="width:650px;height:300px;">
+                <img class="hover" src="images/cardHover.jpg" alt="">
+                <img class="caption" src="images/cardCaption.png" alt="">
+                <img class="still" src="images/cardStill.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="shell">
+            <div class="columnLeft">
+                <div class="headingSmall">P3 PROGRAMMING</div>
+                <div class="information">
+                    Below are some examples of our partnership programming in schools:
+                    <ul>
+                        <li>One-on-one or small group reading tutors</li>
+                        <li>Installation of College Going Culture Environment Materials</li>
+                        <li>Creation of tutor training materials</li>
+                        <li>Organization of book drives to supplement campus or classroom inventories</li>
+                        <li>Leveling current book inventories</li>
+                        <li>Creating Reading Buddy programs across similar grades on each campus</li>
+                        <li>Inviting public school parent community to share in speaker programs on private school campuses</li>
+                    </ul><br><br>
+                </div>
+                <div class="headingSmall">CURRENT INITIATIVES</div>
+                <div class="information">
+                    <ol>
+                        <li>One-on-one or small group reading tutors</li>
+                        <li>Installation of College Going Culture Environment Materials</li>
+                        <li>Creation of tutor training materials</li>
+                        <li>Organization of book drives to supplement campus or classroom inventories</li>
+                        <li>Leveling current book inventories</li>
+                        <li>Creating Reading Buddy programs across similar grades on each campus</li>
+                        <li>Inviting public school parent community to share in speaker programs on private school campuses</li>
+                    </ol>
+                    <br><br>
+                </div>
+                
+                <div class="headingSmall">P3 NETWORK MEMBERS</div>
+                <div id="mapCanvas"></div>
+                <br><br>
+            </div>
+
+            <div class="columnRight">
+                <div id="eventsList">
+                    <div class="headingSmall">UPCOMING EVENTS</div>
+                    <!-- BEGIN EVENT HERE -->
+                    <div class="event">
+                        <div class="eventDate">
+                            <div class="eventDay">14</div>
+                            <div class="eventMonth">APR</div>
+                        </div>
+                        <div class="eventDetails">
+                            <span class="eventName">P3 NETWORK MEETING</span>
+                            <span class="eventTime">6:00pm - 8:00pm</span>
+                        </div>
+                    </div>
+                    <div class="eventDescription">
+                        This is where the description goes. Include the location and any other necessary information.
+                    </div>
+                    <!-- END EVENT HERE -->
+                    
+                    <!-- BEGIN EVENT HERE -->
+                    <div class="event">
+                        <div class="eventDate">
+                            <div class="eventDay">1</div>
+                            <div class="eventMonth">MAY</div>
+                        </div>
+                        <div class="eventDetails">
+                            <span class="eventName">ANOTHER EVENT HERE</span>
+                            <span class="eventTime">11:00am - 1:00pm</span>
+                        </div>
+                    </div>
+                    <div class="eventDescription">
+                        This is where the description goes. Include the location and any other necessary information.
+                    </div>
+                    <!-- END EVENT HERE -->
+                    
+                    <!-- BEGIN EVENT HERE -->
+                    <div class="event">
+                        <div class="eventDate">
+                            <div class="eventDay">15</div>
+                            <div class="eventMonth">MAY</div>
+                        </div>
+                        <div class="eventDetails">
+                            <span class="eventName">P3 NETWORK MEETING</span>
+                            <span class="eventTime">6:00pm - 8:00pm</span>
+                        </div>
+                    </div>
+                    <div class="eventDescription">
+                        This is where the description goes. Include the location and any other necessary information.
+                    </div>
+                    <!-- END EVENT HERE -->
+                </div>
+            </div>
+        </div>
+        
+        <div style="width:100%;background:rgba(0,136,163,1);clear:both;height:50px;box-shadow:inset 0px 3px 3px rgba(0,0,0,0.3);">
+            <div class="columnFull">Put the footer here.</div>
+        </div>
+
+    </body>
+
+
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                easing: "easeInOutCirc",
+                controlsContainer: ".flexslider-container",
+                slideshowSpeed: 10000,
+                animationSpeed: 1000,
+                directionNav: false,
+                controlNav: false,
+                keyboardNav: false,
+                mousewheel: false,
+                before: function () {
+                    //$('.readMoreDesc').fadeOut(200);
+                    var currentMargin = parseInt($('.slideContent').css('margin-left'), 10);
+                    currentMargin = currentMargin - 20 + 'px';
+                    $('.slideContent').animate({'margin-left': currentMargin, 'opacity': 0}, 400);
+                },
+                after: function () {
+                    var currentMargin = parseInt($('.slideContent').css('margin-left'), 10);
+                    currentMargin = currentMargin + 20 + 'px';
+                    $('.slideContent').animate({'margin-left': currentMargin, 'opacity': 1}, 1000);
+                }
+            });
+        });
+    </script>
+
+
+
+</html>
+
+
